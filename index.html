@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta cgarset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=EDGE">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dhruv's Portfolio</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://kit.fontawesome.com/4409cedddb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+<div class="container">
+	<nav>
+		<img src="" class="logo">
+		<ul id="sidemenu">
+			<li><a href="#header">Home</a></li>
+			<li><a href="#about">About</a></li>
+			<li><a href="#resume">Resume</a></li>
+			<li><a href="#projects">Projects</a></li>
+			<li><a href="#contact">Contact</a></li>
+			<i class="fas fa-times" onclick="closemenu()"></i>
+		</ul>
+		<i class="fas fa-bars" onclick="openmenu()"></i>
+	</nav>
+	<div class="header-text">
+	<p>Student at UVCE</p>
+	<h1>Hi, I am Dhruv <br> Mahajan </h1>
+</div>
+</div>
+</div>
+<!------------------about----------------------->
+<div id="about">
+	<div class="container">
+		<div class="row">
+			<div class="about-col-1">
+				<img src="user.jpeg">
+			</div>
+			<div class="about-col-2">
+				<h1 class="sub-title">ABOUT ME</h1>
+				<p>Hi! I'm Dhruv, a 2nd year B. Tech (AIML) student at UVCE.
+	 			I'm passionate when it comes to the domain of electricals and electronics,
+	 			and have successfully constructed multiple personal projects relating to the same.
+	 			I'm honoured to say that I'm a part of a pragmatic research and project lab called MARVEL,
+	 			and am also a consultant in 180DC, UVCE sector.</p>
+				<div class="tab-titles">
+					<p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+					<p class="tab-links" onclick="opentab('education')">Education</p>
+					<p class="tab-links" onclick="opentab('experince')">Experince</p>
+				</div>
+				<div class="tab-contents active-tab" id="skills">
+					<ul>
+						<li><span>Electronics</span><br>Currently pursuing a curse in IOT</li>
+						<li><span>AIML</span><br>Currently a batch student of AIML domain in MARVEL</li>
+						<li><span>Robotics</span><br>Competed in multiple robot wars</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="education">
+					<ul>
+						<li><span>2023</span><br>B.Tech in AIML at UVCE</li>
+						<li><span>2020</span><br>NPS Yelhanka</li>
+						<li><span>2006</span><br>Shikshantar Gurgoan</li>
+					</ul>
+				</div>
+				<div class="tab-contents" id="experince">
+					<ul>
+						<li><span>Consultant</span><br>Consultant for 180DC UVCE</li>
+						<li><span>Robotics</span><br>Have made and competed in contests</li>
+						<li><span>Aviation</span><br>making a drone to carry load</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!------------------Resume----------------------->
+<div id="resume">
+	<div class="container">
+		<h1 class="sub-title">Resume</h1>
+		<div class="resume-list">
+			<div>
+				<h2>TOPIC 1<h2>
+				<p>
+				ADD THINGS HERE!!
+				</p><br>
+				<a href="#">Learn more</a>
+			</div>
+			<div>
+				<h2>TOPIC 2<h2>
+				<p>
+				ADD THINGS HERE!!
+				</p><br>
+				<a href="#">Learn more</a>
+			</div>	
+			<div>
+				<h2>TOPIC 3<h2>
+				<p>
+				ADD THINGS HERE!!
+				</p><br>
+				<a href="#">Learn more</a>
+			</div>		
+		</div>
+	</div>
+</div>
+
+<!------------------Projects----------------------->
+<div id="projects">
+	<div class="container">
+		<h1 class="sub-title">Projects</h1>
+		<div class="work-list">
+			<div class="work">
+				<img src="DRONE.jpeg">
+				<div class="layer">
+					<h3>PAYLOAD!</h3>
+					<p>This here is the Flight Controller of the drone and is still a work in progress.</p>
+					<a href="#"><i class="fa-solid fa-link"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="IOT.png">
+				<div class="layer">
+					<h3>Camera</h3>
+					<p>Using EPS32 camera a web server is made and the camera streams the photo and can be used for multiple purposes</p>
+					<a href="#"><i class="fa-solid fa-link"></i></a>
+				</div>
+			</div>
+			<div class="work">
+				<img src="trial1.jpeg">
+				<div class="layer">
+					<h3>ADD HERE!</h3>
+					<p>info about the project</p>
+					<a href="#"><i class="fa-solid fa-link"></i></a>
+				</div>
+			</div>
+		</div>
+		<a href="https://github.com/shcbswvc" class="btn">See More</a>
+	</div>
+</div>
+
+
+<!----------------Contacts---------------------->
+<div id="contact">
+	<div class="container">
+		<div class="row">
+			<div class="contact-left">
+				<h1 class="sub-title">Contact Me</h1>
+				<p><i class="fa-solid fa-envelope"></i>dhruv123maha@gmail.com</p>
+				<div class="social-icons">
+					<a href="https://www.linkedin.com/in/dhruv-mahajan-55393b26a/"><i class="fa-brands fa-linkedin"></i></a>
+					<a href="https://github.com/shcbswvc"><i class="fa-brands fa-square-github"></i></a>
+				</div>
+				<a href="Resume.pdf" download class="btn btn2">Download Resume</a>
+			</div>
+			<div class="contact-right">
+				<form class="form">
+					<input type="text" name="Name" placeholder="Your Name" required>
+					<input type="email" name="email" placeholder="Your Email" required>
+					<textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+					<button type="submit" class="btn btn2">Submit</button>
+					
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script>
+
+	var tablinks = document.getElementsByClassName("tab-links");
+	var tabcontents = document.getElementsByClassName("tab-contents");
+
+	function opentab(tabname){
+		for(tablink of tablinks){
+			tablink.classList.remove("active-link");
+		}
+		for(tabcontent of tabcontents){
+			tabcontent.classList.remove("active-tab");
+		}
+		event.currentTarget.classList.add("active-link");
+		document.getElementById(tabname).classList.add("active-tab");
+	}
+	var sidemenu = document.getElementById("sidemenu")
+	function openmenu(){
+		sidemenu.style.right = "0";
+	}
+	function closemenu(){
+		sidemenu.style.right = "-200px";
+	}
+	
+</script>
+<script>
+    const formEl = document.querySelector('.form');
+    formEl.addEventListener('submit', handleSubmit);
+
+    function handleSubmit(event) {
+        event.preventDefault();
+
+        const formData = new FormData(formEl);
+        const data = new URLSearchParams(formData);
+
+        fetch('https://reqres.in/api/users', {
+            method: 'POST',
+            body: data
+        })
+            .then(res => res.json())
+            .then(data => console.log(data))
+            .catch(error => console.error(error));
+    }
+</script>
+</body>
+</html>
